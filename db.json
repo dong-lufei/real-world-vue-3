@@ -1,0 +1,37 @@
+{
+  "events": [
+    {
+      "id": 5928101,
+      "category": "动物福利",
+      "title": "猫收养日",
+      "description": "在此活动中找到您的新猫科动物朋友。",
+      "location": "喵镇",
+      "date": "January 28, 2022",
+      "time": "12:00",
+      "petsAllowed": true,
+      "organizer": "凯特·莱迪"
+    },
+    {
+      "id": 4582797,
+      "category": "食物",
+      "title": "社区园艺",
+      "description": "加入我们，因为我们倾向于社区食用植物。",
+      "location": "弗洛拉城",
+      "date": "March 14, 2022",
+      "time": "10:00",
+      "petsAllowed": true,
+      "organizer": "蕨类植物花粉"
+    },
+    {
+      "id": 8419988,
+      "category": "可持续性",
+      "title": "海滩清理",
+      "description": "帮忙捡拾岸边的垃圾。",
+      "location": "卡门海滩",
+      "date": "July 22, 2022",
+      "time": "11:00",
+      "petsAllowed": false,
+      "organizer": "凯瑞·威尔士"
+    }
+  ]
+}
