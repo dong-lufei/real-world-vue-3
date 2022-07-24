@@ -8,7 +8,7 @@
 <script>
 // @ 代表 /src
 import EventCard from '@/components/EventCard.vue'
-import axios from "axios"
+import EventService from "@/services/EventService"
 
 export default {
   name: 'HomeView',
@@ -22,11 +22,12 @@ export default {
     }
   },
   created () {
-    axios.get("https://my-json-server.typicode.com/git136975643/vuecli-sfc/events").then(res => {
-      console.log('events', res.data)
+    EventService.getEvents().then(res => {
+      this.events = res.data
     }).catch(err => {
       console.log(err)
     })
+
   }
 }
 </script>

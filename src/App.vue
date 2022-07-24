@@ -1,8 +1,8 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">活动列表</router-link>|
-      <router-link to="/about">关于页</router-link>
+      <router-link :to="{name:'EventList'}">活动列表</router-link>|
+      <router-link :to="{name:'About'}">关于页</router-link>
     </div>
   </div>
   <router-view />
