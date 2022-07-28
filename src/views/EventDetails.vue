@@ -7,21 +7,25 @@
 </template>
 
 <script>
-import EventService from "@/services/EventService"
 
 export default {
   props: ['id'],
-  data () {
-    return {
-      event: null,
+  computed: {
+    event () {
+      return this.$store.state.event
     }
   },
   created () {
-    EventService.getEvent(this.id).then(res => {
-      this.event = res.data
-    }).catch(err => {
-      console.log("进入getEvent接口捕获", err)
+    this.$store.dispatch('fetchEvent', this.id).catch(err => {
+      this.$router.push({
+        name: 'ErrorDisplay',
+        params: {
+          error: err.code
+        }
+      })
     })
   }
+
+
 }
 </script>

@@ -1,5 +1,5 @@
 <template>
-  <h1>善事活动</h1>
+  <h1>公益活动</h1>
   <div class="events">
     <EventCard v-for="event in events" :key="event.id" :event="event" />
   </div>
@@ -8,7 +8,6 @@
 <script>
 // @ 代表 /src
 import EventCard from '@/components/EventCard.vue'
-import EventService from "@/services/EventService"
 
 export default {
   name: 'HomeView',
@@ -16,18 +15,20 @@ export default {
   components: {
     EventCard
   },
-  data () {
-    return {
-      events: null
+  computed: {
+    events () {
+      return this.$store.state.events
     }
   },
   created () {
-    EventService.getEvents().then(res => {
-      this.events = res.data
-    }).catch(err => {
-      console.log(err)
+    this.$store.dispatch('fetchEvents').catch(err => {
+      this.$router.push({
+        name: 'ErrorDisplay',
+        params: {
+          error: err.code
+        }
+      })
     })
-
   }
 }
 </script>

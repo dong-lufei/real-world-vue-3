@@ -2,6 +2,7 @@
   <div id="app">
     <div id="nav">
       <router-link :to="{name:'EventList'}">活动列表</router-link>|
+      <router-link :to="{name:'EventCreate'}">创建一个活动</router-link>|
       <router-link :to="{name:'About'}">关于页</router-link>
     </div>
   </div>

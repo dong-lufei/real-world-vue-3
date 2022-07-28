@@ -1,7 +1,7 @@
 import axios from "axios"
 
 const apiClient = axios.create({
-  baseURL: "https://my-json-server.typicode.com/git136975643/vuecli-sfc",
+  baseURL: "http://localhost:3000", // json-server工具监听
   withCredentials: false,
   headers: {
     Accept: "application/json",
@@ -15,5 +15,8 @@ export default {
   },
   getEvent(id) {
     return apiClient.get(`/events/${id}`)
+  },
+  postEvent(event) {
+    return apiClient.post("/events", event)
   }
 }

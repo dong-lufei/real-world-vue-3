@@ -2,8 +2,8 @@
 
 由 vue create `<project-name>` 创建项目
 
-主要实现 vue3 + vue-router + axios的demo
-
+主要实现 vue3 + vue-router + axios 的 demo
+json-server
 ## Project setup
 
 ```
