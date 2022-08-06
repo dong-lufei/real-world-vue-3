@@ -1,6 +1,6 @@
 .DS_Store
 node_modules
-/dist
+# /dist
 
 
 # local env files
@@ -23,3 +23,7 @@ pnpm-debug.log*
 *.sw?
 yarn.lock
 .yarn
+.yarnrc.yml
+
+.pnp.cjs
+.pnp.loader.mjs

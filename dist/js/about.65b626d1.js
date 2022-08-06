@@ -1,0 +1,2 @@
+"use strict";(self["webpackChunkreal_world_vue_3"]=self["webpackChunkreal_world_vue_3"]||[]).push([[443],{9359:function(r,e,n){n.r(e),n.d(e,{default:function(){return d}});var u=n(8305);const t={class:"about"},a=(0,u._)("h1",null,"这是关于页",-1),l=[a];function c(r,e){return(0,u.wg)(),(0,u.iD)("div",t,l)}var s=n(3600);const o={},_=(0,s.Z)(o,[["render",c]]);var d=_}}]);
+//# sourceMappingURL=about.65b626d1.js.map

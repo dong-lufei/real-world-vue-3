@@ -23,7 +23,7 @@ export default createStore({
   actions: {
     createEvent({ commit }, event) {
       return EventService.postEvent(event)
-        .then((res) => {
+        .then(() => {
           commit("ADD_EVENT", event)
         })
         .catch((err) => {

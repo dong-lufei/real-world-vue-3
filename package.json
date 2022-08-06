@@ -1,10 +1,11 @@
 {
-  "name": "vuecli-sfc",
+  "name": "real-world-vue-3",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": " json-server --watch db.json &  vue-cli-service serve",
-    "build": " json-server --watch db.json &  vue-cli-service build"
+    "dev": "vue-cli-service serve",
+    "serve": "json-server --watch db.json & vue-cli-service serve",
+    "build": "vue-cli-service build"
   },
   "dependencies": {
     "axios": "^0.27.2",
