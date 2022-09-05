@@ -8,7 +8,7 @@
 
 由脚手架搭建，命令`vue create real-world-vue-3` 创建项目(前提安装了 @vue/cli)
 
-主要用到框架和库：vue3 + vue-router + vuex + axios + json-server
+主要用到框架和库：vue3 + vue-router4 + vuex + axios + json-server
 
 ## 安装依赖
 
