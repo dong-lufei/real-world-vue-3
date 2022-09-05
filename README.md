@@ -26,7 +26,7 @@ npm i
 
 如果启动报错（不识别此命令或者一个终端不能同时开 2 个端口）：
 
-1. 建议 1：升级终端（不用 windows 系统默认的 5 版本，把 powershell 升级到 7 版本及以上）
+1. 建议 1：升级powershell终端（不用 windows 系统默认的 5 版本，把 powershell 升级到 7 版本）
 2. 建议 2：使用 GitBash 终端（或别的不报错此命令的终端，比如 linux 系统里的)运行此项目
 3. 建议 3：改 package.json 文件 scripts 里的 serve 字段值为 vue-cli-service serve，保存后终端运行命令 start json-server --watch db.json & start yarn serve
 
